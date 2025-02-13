@@ -16,20 +16,10 @@
     "format:dita": "prettier --write \"**/*.dita\"",
     "format:xml": "prettier --write \"**/*.xml\"",
     "format:xsl": "prettier --write \"**/*.xsl\"",
-    "lint-staged": "lint-staged",
-    "prepare": "husky",
     "prettier": "prettier --write \"**/*.{css,dita*,json,md,xml,xsl,yml}\"",
     "prettier-check": "prettier --check \"**/*.{css,dita*,json,md,xml,xsl,yml}\"",
     "stylelint": "stylelint \"**/*.css\" --globby-options '{\"dot\":true}'",
     "test": "prettier --list-different \"**/*.{css,dita*,json,md,xml,xsl,yml}\""
-  },
-  "lint-staged": {
-    "*.{css,dita*,json,md,xml,xsl,yml}": [
-      "prettier --write"
-    ],
-    "*.css": [
-      "stylelint"
-    ]
   },
   "stylelint": {
     "extends": [
@@ -40,11 +30,10 @@
     }
   },
   "devDependencies": {
-    "@prettier/plugin-xml": "3.2.2",
-    "husky": "^9.0.10",
-    "lint-staged": "15.2.2",
-    "prettier": "3.2.5",
-    "stylelint": "^16.2.0",
-    "stylelint-config-twbs-bootstrap": "^13.0.0"
+    "@prettier/plugin-xml": "3.4.1",
+    "lefthook": "^1.10.10",
+    "prettier": "3.4.2",
+    "stylelint": "^16.14.1",
+    "stylelint-config-twbs-bootstrap": "^15.1.0"
   }
 }
